@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "sonicmod",
+  "version": "${version}",
+  "name": "Sonic Generations",
+  "description": "Sonic Generations mekanikleri: boost, homing attack.",
+  "authors": ["You"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.sonic.SonicClient"]
+  },
+  "mixins": [
+    { "config": "sonicmod.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
